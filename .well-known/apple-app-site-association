@@ -1,0 +1,10 @@
+{
+  "applinks": {
+    "details": [
+      {
+        "appIDs": ["57M7634D4Y.com.studio45.RPSOnline"],
+        "components": [{ "/": "/rps/join/*", "comment": "Приглашение в комнату RPS Online" }]
+      }
+    ]
+  }
+}

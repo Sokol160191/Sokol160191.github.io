@@ -1,0 +1,17 @@
+<!doctype html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Studio 45</title>
+<style>body{font-family:-apple-system,Segoe UI,Roboto,sans-serif;max-width:560px;margin:3em auto;padding:0 1em;line-height:1.5;color:#222;text-align:center}
+.code{font-size:2.4em;font-weight:800;letter-spacing:.12em;margin:.4em 0}a.btn{display:inline-block;margin-top:1em;padding:.7em 1.4em;background:#8fb80e;color:#fff;border-radius:12px;text-decoration:none;font-weight:700}</style></head>
+<body><div id="c"><h1>Страница не найдена / Page not found</h1><p><a href="/">Studio 45</a></p></div>
+<script>
+var m = location.pathname.match(/^\/rps\/join\/([A-Za-z0-9]{6})/);
+if (m) {
+  var code = m[1].toUpperCase();
+  document.getElementById('c').innerHTML =
+    '<h1>Rock Paper Scissors Online</h1>' +
+    '<p>Вас пригласили в комнату. Установите игру и введите код в «С другом» › «Войти по коду».<br>' +
+    'You are invited to a room. Install the game and enter the code in “With a friend” › “Enter a code”.</p>' +
+    '<div class="code">' + code + '</div>' +
+    '<a class="btn" href="https://apps.apple.com/app/id6451455091">App Store</a>';
+}
+</script></body></html>
