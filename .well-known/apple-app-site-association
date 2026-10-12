@@ -4,6 +4,10 @@
       {
         "appIDs": ["57M7634D4Y.com.studio45.RPSOnline"],
         "components": [{ "/": "/rps/join/*", "comment": "Приглашение в комнату RPS Online" }]
+      },
+      {
+        "appIDs": ["57M7634D4Y.com.studio45.drawlikepro"],
+        "components": [{ "/": "/draw/r/*", "comment": "Приглашение в комнату или пати Draw Like a Pro" }]
       }
     ]
   }

@@ -14,4 +14,17 @@ if (m) {
     '<div class="code">' + code + '</div>' +
     '<a class="btn" href="https://apps.apple.com/app/id6451455091">App Store</a>';
 }
+
+var d = location.pathname.match(/^\/draw\/r\/([A-Za-z0-9]{6})/);
+if (d) {
+  var dc = d[1].toUpperCase();
+  document.title = 'Draw Like a Pro';
+  document.getElementById('c').innerHTML =
+    '<h1>Draw Like a Pro</h1>' +
+    '<p>Вас пригласили поиграть. Если игра установлена, откройте её и введите код в «Войти по коду».<br>' +
+    'You are invited to play. If the game is installed, open it and enter the code in “Join with code”.<br>' +
+    'Te han invitado a jugar. Si tienes el juego, ábrelo e introduce el código en «Entrar con código».</p>' +
+    '<div class="code">' + dc + '</div>' +
+    '<a class="btn" href="drawlikepro://r/' + dc + '">Открыть игру / Open the game / Abrir el juego</a>';
+}
 </script></body></html>
